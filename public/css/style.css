@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background-image: url("https://cdn.pixabay.com/photo/2016/06/07/16/12/sky-1441936_960_720.jpg");
+  background-size: cover;
+}
+.btn {
+  cursor: pointer;
+}
+.container {
+  height: 75vh;
+}
+#search input {
+  height: 3vh;
+  width: 20vw;
+  border: 1px solid #cccccc;
+  margin-left: 37vw;
+  margin-top: 0px;
+}
+.weather {
+  font-size: 7rem;
+  color: #3f3e3e;
+  margin-left: 37vw;
+}
+h1 {
+  color: #888888;
+  font-size: 16px;
+}
+
+footer {
+  color: #070844;
+  font-size: 22px;
+  margin: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rosybrown;
+}
+#data {
+  margin-left: 37vw;
+  margin-top: 5vh;
+  display: inline-block;
+}
+#data input {
+  height: 5vh;
+  width: 50vw;
+  border: 1px solid #cccccc;
+  font-size: 16px;
+}
+p {
+  display: block;
+  font-size: 20px;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: #888888;
+  text-align: center;
+  margin-left: 40vw;
+}
+#message {
+  margin-left: 37vw;
+}

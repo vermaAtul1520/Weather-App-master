@@ -1,0 +1,33 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Home Page</title>
+        
+    </head>
+    <body>
+        {{>header}}
+        <h1 class="weather">Weather</h1>
+        <form action="/" method="post">
+            <div class="container">
+                <div id="search">
+                <input id="address" type="text" name="address" placeholder="Enter your Location">
+                <button class="btn">Search</button>
+            </div>
+            <div id="data">
+                <p id="message2"></p>
+                <p>Here is the Weather report for {{country}}.</p>
+                <p>It feals Like {{temperature}} degree celcius</p>
+                <p>There is {{rain}}% chance of rain</p>
+                <p>Wind speed will be {{wind_speed}} kmpH </p>
+                <p>Overall Condition : {{condition}} </p>
+                <p>Last Updated on {{last_updated}} </p>
+            </div>
+        </form>
+        {{>footer}}
+        <script src='/js/main.js'></script>
+    </body>
+    </html>
