@@ -21,39 +21,33 @@ app.set("view engine", "hbs");
 app.set("views", viewsPath);
 hbs.registerPartials(partialsPath);
 
-const port = process.env.PORT || 3000;
-// app.get("/", (req, res) => {
-//   res.render("index", {
-//     title: "This is the Home Page!!!!!!",
-//     name: "Atul Verma",
-//   });
-// });
+const port = process.env.PORT || 5000;
 
 app.get("/about", (req, res) => {
-  res.render("about", {
-    title: "This is the About Page!!!!!!",
-    name: "Atul Verma",
-  });
+    res.render("about", {
+        title: "This is the About Page!!!!!!",
+        name: "Atul Verma",
+    });
 });
 
 // console.log(address.value);
 app.get("/", (req, res) => {
-  res.render("weather", {
-    name: "Atul Verma",
-  });
-  // console.log(req.body);
+    res.render("weather", {
+        name: "Atul Verma",
+    });
+    // console.log(req.body);
 });
 app.post("/", urlencodedParser, (req, res) => {
-  const address = req.body.address;
-  // console.log(address);
-  const data = geocode(address, (error, data) => {
-    if (error) return res.status(500).send(error);
-    return res.render("weatherdata", {
-      ...data,
-      name: "Atul Verma",
+    const address = req.body.address;
+    // console.log(address);
+    const data = geocode(address, (error, data) => {
+        if (error) return res.status(500).send(error);
+        return res.render("weatherdata", {
+            ...data,
+            name: "Atul Verma",
+        });
+        // else res.send(data);
     });
-    // else res.send(data);
-  });
 });
 // app.get("/weather", (req, res) => {
 //   const address1 = req.query.q;
@@ -63,5 +57,5 @@ app.post("/", urlencodedParser, (req, res) => {
 //   });
 // });
 app.listen(port, () => {
-  console.log("Server Started on port" + port);
+    console.log("Server Started on port " + port);
 });
