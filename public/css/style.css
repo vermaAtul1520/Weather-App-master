@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: url("https://cdn.pixabay.com/photo/2016/06/07/16/12/sky-1441936_960_720.jpg");
+  background-image: url("../img/Season.gif");
   background-size: cover;
 }
 .btn {
@@ -9,17 +9,17 @@ body {
 .container {
   height: 75vh;
 }
-#search input {
-  height: 3vh;
-  width: 20vw;
-  border: 1px solid #cccccc;
-  margin-left: 37vw;
-  margin-top: 0px;
+#search{
+  position: absolute;
+  top: 25vh;
+  left: 10vw;
 }
 .weather {
   font-size: 7rem;
-  color: #3f3e3e;
-  margin-left: 37vw;
+  color: mintcream;
+  position:absolute;
+  top:15vh;
+  left:35vw;
 }
 h1 {
   color: #888888;
@@ -27,20 +27,22 @@ h1 {
 }
 
 footer {
-  color: #070844;
+  color: #0e0e10;
   font-size: 22px;
   margin: 0;
   position: fixed;
-  left: 0;
+  left: 39vw;
   bottom: 0;
-  width: 100%;
+  width: 25%;
   text-align: center;
-  background-color: rosybrown;
+  background-color: chocolate;
+  border-radius: 50px;
 }
 #data {
-  margin-left: 37vw;
-  margin-top: 5vh;
-  display: inline-block;
+  position: relative;
+    top: 30vh;
+    color: white;
+    left: 5vw;
 }
 #data input {
   height: 5vh;
@@ -51,7 +53,7 @@ footer {
 p {
   display: block;
   font-size: 20px;
-  color: black;
+  color: white;
 }
 a {
   text-decoration: none;
@@ -61,4 +63,17 @@ a {
 }
 #message {
   margin-left: 37vw;
+}
+
+.head{
+  flex-wrap: nowrap;
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+.weather-form{
+position: absolute;
+top:20vh;
+left:30vw;
 }
