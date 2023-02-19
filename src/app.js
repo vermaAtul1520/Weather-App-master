@@ -22,7 +22,9 @@ app.set("views", viewsPath);
 hbs.registerPartials(partialsPath);
 
 const port = process.env.PORT || 5000;
-
+/**
+ * this iss about route
+ */
 app.get("/about", (req, res) => {
     res.render("about", {
         title: "This is the About Page!!!!!!",

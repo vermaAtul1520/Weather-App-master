@@ -1,4 +1,10 @@
 const request = require("request");
+
+/**
+ * It basically finds data bassed on location using address through weather api
+ * @param {*} address 
+ * @param {*} callback funtion
+ */
 const geocode = (address, callback) => {
     const url =
         "https://api.weatherapi.com/v1/current.json?key=89e0daacde794299abe81935221201&q=" +
